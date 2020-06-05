@@ -26,7 +26,11 @@ RUN apk add --update \
   pcre-dev \
   pkgconf \
   pkgconfig \
-  zlib-dev
+  zlib-dev \
+  nodejs \
+  npm
+# Install Node - BB - 5 June 2020
+# RUN apk add --update nodejs npm
 
 # Get nginx source.
 RUN cd /tmp && \
